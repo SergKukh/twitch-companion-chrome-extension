@@ -1,0 +1,84 @@
+.liveStreamItemContainer {
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.liveStreamItemContainer:hover {
+    background-color: #161616;
+}
+
+.liveStreamItemContainer:hover .liveStreamItemContainer__image_pin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liveStreamItemContainer__image {
+    position: relative;
+    width: 100px;
+    height: 56px;
+}
+
+.liveStreamItemContainer__image_time {
+    position: absolute;
+    padding: 1px;
+    background-color: #000000a9;
+    bottom: 0;
+    right: 0;
+    font-size: 13px;
+}
+
+.liveStreamItemContainer__image_pin {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: #b9b9b97e;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.liveStreamItemContainer__image_pin:hover {
+    background-color: #000;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.liveStreamItemContainer__image_pin:hover>svg {
+    fill: #fff
+}
+
+.streamInfoLine {
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.liveStreamItemContainer__info {
+    width: 250px;
+    margin-left: 10px;
+}
+
+.liveStreamItemContainer__info_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.liveStreamItemContainer__info_top .username {
+    color: #faead6;
+}
+
+.liveStreamItemContainer__info_top .livecount {
+    color: #ff6161;
+}
+
+.liveStreamItemContainer__info_middle {
+    color: #a7a7a7;
+}

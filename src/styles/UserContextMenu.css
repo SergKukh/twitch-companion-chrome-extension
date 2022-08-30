@@ -1,0 +1,28 @@
+.userContextContainer {
+    position: fixed;
+    background-color: black;
+    transform: translate(35px, -35px);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.userContextContainer__btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #cf9bff;
+    font-size: 14px;
+}
+
+.userContextContainer__btn span {
+    display: block;
+    margin-left: 10px;
+}
+
+.userContextContainer__btn:hover {
+    color: #fff;
+}
+
+.userContextContainer__btn:hover>svg {
+    fill: #fff
+}

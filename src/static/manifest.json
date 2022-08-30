@@ -1,0 +1,22 @@
+{
+    "name": "Twitch Companion",
+    "description": "Watch your follows on Twitch",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon32.png",
+        "128": "icon32.png"
+    },
+    "action": {
+        "default_title": "Twitch Companion",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}

@@ -1,0 +1,7 @@
+.menuItemContainer {
+    cursor: pointer;
+}
+
+.menuItemContainer img {
+    max-width: 24px;
+}
